@@ -14,7 +14,7 @@ Unless you are running this on a fairly powerful system, the basic usage will pr
 uv run inference.py --low-attention my_file.mp4
 ```
 
-THe script outputs a .vtt file with the same base name in the same directory the file is currently in.
+The script outputs a .vtt file with the same base name in the same directory the file is currently in.
 
 ## Installation
 
