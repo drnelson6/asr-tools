@@ -55,6 +55,7 @@ def transcribe_file(file_base, low_attention):
 @click.option('--low-attention', is_flag=True, default=False)
 @click.argument('file_base')
 def transcribe(file_base, low_attention):
+    file_base = file_base.replace('.mp4', '')
     convert_file(file_base)
     output = transcribe_file(file_base, low_attention=low_attention)
     generate_vtt(output, f'{file_base}.vtt')
