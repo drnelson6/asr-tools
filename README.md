@@ -20,6 +20,12 @@ The script outputs a .vtt file with the same base name in the same directory the
 
 uv should handle installation of the python dependencies.
 
+The script requires ffmpeg to extract the audio track from the video file. On Debian/Ubuntu, install via:
+
+```bash
+sudo apt-get install ffmpeg
+```
+
 You may run into issues if you do not have packages installed to build python extensions. On Debian/Ubuntu, this can be resolved through:
 
 ```bash
